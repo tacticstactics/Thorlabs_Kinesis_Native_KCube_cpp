@@ -3,10 +3,6 @@
 
 #include <iostream>
 
-
-
-
-
 #include <stdlib.h>
 #include <conio.h>
 
@@ -23,7 +19,7 @@ using namespace std;
 	{
 		if (argc < 1)
 		{
-			printf("Usage = Example_TDC001 [serial_no] [position: optional (0 - 1715200)] [velocity: optional (0 - 3838091)]\r\n");
+			printf("Usage = Example_KDC101 [serial_no] [position: optional (0 - 1715200)] [velocity: optional (0 - 3838091)]\r\n");
 			char c = _getch();
 			return 1;
 		}
