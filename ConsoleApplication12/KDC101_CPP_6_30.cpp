@@ -1,4 +1,4 @@
-// TDC001_CPP_6_30.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// KDC101_CPP_6_30.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -11,9 +11,9 @@
 #include <conio.h>
 
 #if defined TestCode
-#include "..\..\..\Instruments\ThorLabs.TCube.DCServo\ThorLabs.TCube.DCServo\Thorlabs.MotionControl.TCube.DCServo.h"
+#include "..\..\..\Instruments\ThorLabs.TCube.DCServo\ThorLabs.KCube.DCServo\Thorlabs.MotionControl.KCube.DCServo.h"
 #else
-#include "Thorlabs.MotionControl.TCube.DCServo.h"
+#include "Thorlabs.MotionControl.KCube.DCServo.h"
 #endif
 
 
@@ -28,7 +28,7 @@ using namespace std;
 			return 1;
 		}
 
-		int serialNo = 83844239;
+		int serialNo = 27500576;
 		if (argc > 1)
 		{
 			serialNo = _wtoi(argv[1]);
@@ -58,7 +58,7 @@ using namespace std;
 			short n = TLI_GetDeviceListSize();
 			// get TDC serial numbers
 			char serialNos[100];
-			TLI_GetDeviceListByTypeExt(serialNos, 100, 83);
+			TLI_GetDeviceListByTypeExt(serialNos, 100, 27);
 
 			// output list of matching devices
 			{
